@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Letter For You</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <!-- STEP 1: ENVELOPE -->
+    <div id="envelope-step" class="card active">
+      <div class="envelope-wrapper">
+        <div class="envelope">
+          <div class="front flap"></div>
+          <div class="front pocket"></div>
+          <div class="letter-preview">
+            <p>Sheeza...</p>
+          </div>
+          <div class="heart-seal">💖</div>
+        </div>
+      </div>
+      <h2>A letter for you...</h2>
+      <button id="envelope-btn" class="btn">Open Letter ✨</button>
+    </div>
+
+    <!-- STEP 2: LETTER -->
+    <div id="letter-step" class="card hidden">
+      <h1 class="title cursive-title">A letter to my love</h1>
+      <div class="letter-content">
+        <p><strong>My dearest love,</strong></p>
+        <p>From the moment you walked into my life, everything felt a little more like poetry.</p>
+        <p>The sound of your laughter, your breathtakingly beautiful face, and that glowing smile of yours have a way of rewriting my worst days into my absolute best ones.</p>
+        <p>I don't say this lightly, and I don't say it because it's easy — I say it because it's true.</p>
+        <p>I love you so much. Completely, quietly, and without asking for anything in return.</p>
+        <p>So here I am, laying my heart open...</p>
+      </div>
+      <button id="next-to-question" class="btn">Next ➔</button>
+    </div>
+
+    <!-- STEP 3: QUESTION -->
+    <div id="question-step" class="card hidden">
+      <h1 class="title cursive-title">Will you accept my love?</h1>
+      <p class="subtitle">Choose wisely — your heart already knows. 😉</p>
+      
+      <div class="buttons-wrapper">
+        <button id="yes-btn" class="btn btn-yes">Yes</button>
+        <button id="no-btn" class="btn btn-no">No</button>
+      </div>
+      <p id="attempt-hint" class="hint-text"></p>
+    </div>
+
+    <!-- STEP 4: SUCCESS -->
+    <div id="success-step" class="card hidden">
+      <div class="hearts-icon">♥ ♥ ♥</div>
+      <h1 class="title cursive-title">I knew it, my love.</h1>
+      <p class="success-text">You've just made me the happiest person alive.<br>Thank you for choosing my heart.</p>
+      <p class="signature cursive">forever yours</p>
+
+      <!-- <button id="back-to-start" class="btn-secondary">&circlearrowleft; Back to Start</button> -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
