@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       body: JSON.stringify({
         status: 'ACCEPTED! ❤️',
-        message: 'Sheeza clicked YES on your love letter website!',
+        message: 'Zoya Khan clicked YES on your love letter website!',
         time: new Date().toLocaleString()
       })
     }).catch(err => console.log(err));
