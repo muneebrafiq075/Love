@@ -88,9 +88,9 @@ document.addEventListener('DOMContentLoaded', () => {
     switchCard(questionStep, successStep);
 
     // 3. Send email via Formspree
-    const formspreeID = "mzdnabdy"; 
+    const formspreeID = "xqpzgynj"; 
 
-    fetch(`https://formspree.io/f/${formspreeID}`, {
+    fetch(` https://formspree.io/f/${formspreeID}`, {
       method: 'POST',
       headers: { 
         'Content-Type': 'application/json',
